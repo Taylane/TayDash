@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+$primary-color: #3f88c5;
+$secondary-color: #44bba4;
+$danger-color: #e94f37;
+$background-color-light: #f6f7eb;
+$background-color-dark: #393e41;
+
+body {
+  background-color: $background-color-light;
+
+  min-height: 100vh;
+  width: 100vw;
+
+  margin: 0;
+}

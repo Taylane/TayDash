@@ -1,0 +1,15 @@
+@import "../../../styles.scss";
+
+.bubble {
+  background-color: $secondary-color;
+  border-radius: 0.4em;
+
+  overflow: hidden;
+
+  max-height: 25vh;
+
+  padding: 24px;
+  margin: 24px;
+
+  text-align: center;
+}

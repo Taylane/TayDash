@@ -1,0 +1,21 @@
+@import "../../../styles.scss";
+
+.thoughts {
+  &__bubbles {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+
+    * {
+      flex: 1 0 25%;
+      // box-sizing: border-box;
+      // padding: 24px;
+      // max-height: 25vh;
+      // max-width: 25vw;
+    }
+  }
+}
