@@ -1,5 +1,5 @@
 <div class="thoughts container">
-  <app-new-bubble></app-new-bubble>
+  <app-new-bubble (atNewBubble)="getBubbles()"></app-new-bubble>
   <div class="thoughts__bubbles">
     <app-bubble *ngFor="let bubble of bubbles" [bubble]="bubble"></app-bubble>
   </div>

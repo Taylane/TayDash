@@ -9,6 +9,8 @@ import { FormsModule } from '@angular/forms';
 import { ThoughtsComponent } from './thoughts-feature/thoughts/thoughts.component';
 import { BubbleComponent } from './thoughts-feature/bubble/bubble.component';
 import { NewBubbleComponent } from './thoughts-feature/new-bubble/new-bubble.component';
+import { BubbleModalComponent } from './thoughts-feature/bubble-modal/bubble-modal.component';
+import { MoneyComponent } from './money/money/money.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { NewBubbleComponent } from './thoughts-feature/new-bubble/new-bubble.com
     ThoughtsComponent,
     BubbleComponent,
     NewBubbleComponent,
+    BubbleModalComponent,
+    MoneyComponent,
   ],
   imports: [
     BrowserModule,

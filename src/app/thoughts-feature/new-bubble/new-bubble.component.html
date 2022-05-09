@@ -1,14 +1,17 @@
 <form
-  #newBubble="ngForm"
-  (ngSubmit)="createBubble(newBubble.value)"
+  #newBubbleForm="ngForm"
+  ngNativeValidate
+  (ngSubmit)="createBubble(newBubbleForm.value)"
   class="new-bubble"
 >
   <div class="control">
     <textarea
       class="textarea is-small card"
-      placeholder="e.g. Hello world"
-      name="bubbleText"
+      placeholder="Qualquer coisa!"
+      name="text"
       [(ngModel)]="bubbleText"
+      required
+      minlength="4"
     ></textarea>
   </div>
   <button class="button">Criar Pensamento</button>

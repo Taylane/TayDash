@@ -1,3 +1,8 @@
-<div *ngIf="bubble" class="bubble card">
+<div *ngIf="bubble" class="bubble card" (click)="toggleModal()">
   <span class="is-size-4">{{ this.bubble.text }}</span>
 </div>
+<app-bubble-modal
+  *ngIf="isModalOpen"
+  [bubble]="bubble"
+  (atCloseModal)="toggleModal()"
+></app-bubble-modal>

@@ -10,7 +10,13 @@ export class BubbleComponent implements OnInit {
   @Input()
   public bubble: Bubble | undefined;
 
+  public isModalOpen: boolean = false;
   constructor() {}
-  
+
   ngOnInit(): void {}
+
+  toggleModal() {
+    this.isModalOpen = !this.isModalOpen;
+    
+  }
 }
